@@ -1,0 +1,59 @@
+{
+  "name": "twiliochat-node",
+  "version": "1.0.0",
+  "private": "private",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "NODE_ENV=test TWILIO_ACCOUNT_SID=your_account_sid TWILIO_API_KEY=your_twilio_auth_token TWILIO_API_KEY=your_twilio_api_key TWILIO_API_SECRET=your_twilio_api_secret TWILIO_CHAT_SERVICE_SID=your_twilio_chat_service_sid node_modules/.bin/mocha test; node_modules/.bin/karma start"
+  },
+  "description": "Node.js|Express implementation of Twilio Chat",
+  "author": {
+    "name": "Omar Ahmed",
+    "email": "neb.trx@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TwilioDevEd/twiliochat-node"
+  },
+  "keywords": [
+    "node",
+    "twilio chat",
+    "twilio",
+    "express"
+  ],
+  "engines": {
+    "node": ">=6.0.0 <8.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~3.1.0",
+    "dotenv-safe": "^5.0.0",
+    "express": "^4.16.4",
+    "jade": "~1.11.0",
+    "jquery": "^3.3.1",
+    "kontainer-di": "^0.9.9",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.1",
+    "serve-favicon": "~2.4.5",
+    "twilio": "^3.23.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.16.0",
+    "chai": "^4.2.0",
+    "cheerio": "^1.0.0-rc.2",
+    "karma": "^2.0.5",
+    "karma-chai": "^0.1.0",
+    "karma-jade2js-preprocessor": "^0.1.0",
+    "karma-jquery-new": "^0.1.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.1",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sinon": "^1.0.5",
+    "mocha": "^5.2.0",
+    "sinon": "^4.5.0",
+    "supertest": "^3.3.0"
+  }
+}
